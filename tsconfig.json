@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "jsx": "preserve",
+        "sourceMap": false,
+        "lib": ["esnext", "dom"],
+        "types": ["vite/client"],
+        "resolveJsonModule": true,
+        "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./resources/js/*"]
+        },
+        "allowSyntheticDefaultImports": true
+    },
+    "include": ["resources/js/**/*.ts", "resources/js/**/*.d.ts", "resources/js/**/*.vue"],
+    "exclude": ["node_modules", "dist", "public", "tests"]
+}
